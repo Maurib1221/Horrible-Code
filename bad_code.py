@@ -19,3 +19,42 @@ elif choice == 4:
 else:
     print("Invalid input")
 
+x = int(input("more? 1 = yes: "))
+if x == 1:
+    a = int(input("Enter a number: "))
+    b = int(input("Enter another number: "))
+    print("Choose operation: 1 = add, 2 = subtract, 3 = multiply, 4 = divide")
+    c = int(input())
+    if c == 1:
+        print("Result is", a + b)
+    elif c == 2:
+        print("Result is", a - b)
+    elif c == 3:
+        print("Result is", a * b)
+    elif c == 4:
+        if b == 0:
+            print("can't divide")
+        else:
+            print("Result is", a / b)
+    else:
+        print("bad input")
+
+x = int(input("more? 1 = yes: "))
+if x == 1:
+    a = int(input("Enter a number: "))
+    b = int(input("Enter another number: "))
+    print("Choose operation: 1 = add, 2 = subtract, 3 = multiply, 4 = divide")
+    c = int(input())
+    if c == 1:
+        print("Result is", a + b)
+    elif c == 2:
+        print("Result is", a - b)
+    elif c == 3:
+        print("Result is", a * b)
+    elif c == 4:
+        if b == 0:
+            print("can't divide")
+        else:
+            print("Result is", a / b)
+    else:
+        print("bad input")
