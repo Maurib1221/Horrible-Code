@@ -34,3 +34,26 @@ def main():
         "3": ("Multiplication", multiply),
         "4": ("Division", divide)
     }
+
+    while True:
+        print("\nChoose operation:")
+        for key, (name, _) in operations.items():
+            print(f"{key}. {name}")
+
+        choice = input("Enter choice: ")
+        if choice not in operations:
+            print("Invalid choice. Try again.")
+            continue
+
+        num1, num2 = get_numbers()
+        operation_name, operation_func = operations[choice]
+        result = operation_func(num1, num2)
+        print(f"{operation_name} result: {result}")
+
+        again = input("Perform another calculation? (y/n): ").lower()
+        if again != 'y':
+            break
+
+
+if __name__ == "__main__":
+    main()

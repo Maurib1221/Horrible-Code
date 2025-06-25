@@ -33,7 +33,7 @@ def run_calculator_once():
     else:
         print("Invalid choice")
 
-\run_calculator_once()
+run_calculator_once()
 x = int(input("More? 1 = yes: "))
 if x == 1:
     run_calculator_once()
